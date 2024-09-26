@@ -69,7 +69,7 @@
 					<article>
 						<?php the_post_thumbnail(); ?>
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<div class="info">[By Admin on December 01, 2012 with <a href="#">01 Commnets</a>]</div>
+						<div class="info">[By <?php the_author(); ?> on <?php the_date('F d, Y' ) ?> with <a href="#">01 Commnets</a>]</div>
 						<p><?php the_content(); ?></p>
 					</article>
 					<?php
