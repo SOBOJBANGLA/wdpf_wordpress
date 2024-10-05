@@ -1,0 +1,463 @@
+/*
+Theme Name: Mix Blog
+Theme URI: http://shadowthemes.com/downloads/mix-blog/
+Template: kavine-blog
+Author: Sensational Theme
+Author URI: http://shadowthemes.com/
+Description: Mix Blog is a modern WordPress theme that comes with high-quality features and minimal design. The theme is a perfect fit for all kind of blogs such as food blogs, travel journals, personal blogs many more. Mix Blog is a fully responsive design that always remains mobile-friendly and will render perfectly on all devices. You also get support for custom headers, two column layout, full-width layout, and tons of easy customization options.
+Tags: translation-ready,custom-background,theme-options,custom-menu,threaded-comments,featured-images,footer-widgets,editor-style,right-sidebar,full-width-template,two-columns,grid-layout,custom-colors,custom-header,custom-logo,featured-image-header,blog,entertainment
+Version: 1.0
+Tested up to: 6.6
+Requires PHP: 5.6
+Text Domain: mix-blog
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Mix Blog business is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+:root {
+  --main-color: #ff8c00 !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.wp-block-latest-posts__post-title {
+    clear: both;
+    color: #333;
+    margin: 16px 0;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Caveat', cursive;
+}
+header .overlay{
+    display: none;
+}
+#masthead{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.site-branding{
+  background-image: none !important;
+  width: 30%;
+}
+.site-branding .wrapper .header-logo{
+  text-align: left;
+  padding: 0;
+}
+.site-title a{
+  font-size: 38px;
+  line-height: 24px;
+  color: var(--main-color);
+}
+.site-title a:hover{
+  text-shadow: 0px 8px 8px var(--main-color);
+}
+.site-logo + #site-identity{
+  margin-bottom: 20px;
+}
+#site-navigation{
+  width: 70%;
+  text-align: right;
+  border: none !important;
+}
+.shadow-section-header{
+  padding-bottom: 20px;
+}
+.shadow-section-title {
+  font-size: 38px;
+  font-family: 'Lugrasimo', cursive !important;
+}
+#featured-slider article .shadow-entry-title a{
+    line-height: 60px;
+}
+
+.f-content-center .featured-content-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    max-width: 650px;
+    border-radius: 30px;
+    padding:40px; 
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    text-align: center;
+}
+a,
+.secondary-menu a:hover,
+.secondary-menu a:focus,
+.secondary-menu ul.menu li.current-menu-item > a,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.pagination .page-numbers.current,
+.widget_popular_post h3 a:hover,
+.widget_popular_post h3 a:focus,
+.widget_popular_post a time,
+.widget_popular_post time,
+#secondary ul li a:hover,
+#secondary ul li a:focus,
+.nav-links a:hover,
+.nav-links a:hover svg,
+#related-posts .shadow-entry-title a:hover,
+#related-posts .shadow-entry-title a:focus,
+#related-posts ul.post-categories li a:hover,
+#related-posts ul.post-categories li a:focus,
+.comment-meta .url:hover,
+.comment-meta .url:focus,
+ul.trail-items li.trail-item.trail-end,
+ul.trail-items li.trail-item.trail-end,
+ul.trail-items li a:hover,
+ul.trail-items li a:focus,
+#features .shadow-entry-title a:hover,
+#features .shadow-entry-title a:focus,
+.hover-default .post-archive article .shadow-entry-container .shadow-entry-title a:hover,
+.hover-default .post-archive article .shadow-entry-container .shadow-entry-title a:focus,
+article .shadow-entry-title a:hover,
+article .shadow-entry-title a:focus,
+.hover-2 .shadow-entry-header h1 a:hover,
+.hover-2 .shadow-entry-header h2 a:hover,
+.hover-2 .shadow-entry-header h3 a:hover,
+.hover-2 .shadow-entry-header h4 a:hover,
+.hover-2 .shadow-entry-header h5 a:hover,
+.hover-2 .latest-featured .shadow-entry-header h2 a:hover,
+.hover-3 .shadow-entry-header h3 a:hover,
+.hover-3 .shadow-entry-header h2 a:hover,
+.hover-3 .shadow-entry-header h3 a:hover,
+.hover-3 .shadow-entry-header h4 a:hover,
+.hover-3 .shadow-entry-header h5 a:hover,
+.hover-3 .latest-featured .shadow-entry-header h2 a:hover,
+.footer-widgets-area .widget ul li a:hover,
+.featured-content-wrapper span.posted-on time,
+.cat-links a,
+#list-articles .shadow-entry-container .more-link,
+#must-read .shadow-entry-title a:hover, 
+#must-read .shadow-entry-title a:focus,
+#featured .posted-on a,
+.cat-links a,
+.shadow-entry-subtitle,
+#popular .shadow-entry-title a:hover, 
+#popular .shadow-entry-title a:focus,
+#featured .shadow-entry-title a:hover, 
+#featured .shadow-entry-title a:focus,
+.shadow-popular-news article .shadow-entry-title a:hover, 
+.shadow-popular-news article .shadow-entry-title a:focus,
+.blog #secondary span.posted-on a:hover, 
+.blog #secondary span.posted-on time:hover, 
+.archive #secondary span.posted-on a:hover, 
+.archive #secondary span.posted-on time:hover, 
+.search #secondary span.posted-on a:hover, 
+.search #secondary span.posted-on time:hover,
+span.posted-on a:hover, 
+span.posted-on time:hover,
+.dark-layout #must-read .shadow-entry-title a:hover,
+.dark-layout #must-read .shadow-entry-title a:focus,
+.dark-layout #message .shadow-entry-title a:hover,
+.dark-layout #message .shadow-entry-title a:focus,
+.dark-layout a:hover,
+.dark-layout a:focus,
+.dark-layout #must-read .shadow-entry-title a:hover, 
+.dark-layout #must-read .shadow-entry-title a:focus, 
+.dark-layout .main-navigation a:hover, 
+.dark-layout .main-navigation a:focus,
+.dark-layout #secondary ul li a:hover,
+.dark-layout #secondary ul li a:focus,
+.dark-layout .menu-item p,
+#trending article .shadow-entry-title a:hover,
+#featured-slider article.half-image .half-content-wrapper .shadow-entry-title a:hover,
+#featured-slider article.half-image .half-content-wrapper .shadow-entry-title a:focus {
+    color: var(--main-color);
+}
+.cat-links a{
+  color: #fff;
+}
+article::before,
+article::after{
+  display: none !important;
+}
+.main-navigation ul.nav-menu > li > a.search:hover svg.icon-search,
+.main-navigation ul.nav-menu > li > a.search:focus svg.icon-search,
+.nav-links a:hover,
+.nav-links a:hover svg,
+.btn svg{
+  fill: var(--main-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .modern-menu .main-navigation ul#primary-menu ul li.current-menu-item > a, 
+  .modern-menu .main-navigation ul#primary-menu ul li:hover > a, 
+  .modern-menu .main-navigation ul#primary-menu ul li:focus > a,
+  .main-navigation ul#primary-menu ul li.current-menu-item > a {
+    color: var(--main-color);
+  }
+}
+.pagination a.page-numbers:hover,
+.pagination a.page-numbers:focus{
+  color: #fff;
+}
+.pagination .page-numbers.current, 
+.pagination a.page-numbers{
+  line-height: 31px;
+}
+.pagination .page-numbers.dots{
+  line-height: 31px;
+}
+/*----------------------------------------
+  Background Color
+------------------------------------------*/
+ .totop,
+ form.search-form button.search-submit, 
+ .widget_search form.search-form button.search-submit,
+ input[type="submit"]:hover,
+input[type="submit"]:focus,
+.reply a:hover,
+.reply a:focus,
+.featured-content-wrapper .btn,
+#featured-posts article:hover .featured-item-wrapper:after,
+#featured-posts article .cat-links a,
+#message .separator,
+.popup-video:hover,
+.slick-prev, 
+.slick-next,
+.slick-dots li button,
+.btn-hover-6 .btn:before,
+.btn-hover-6 .featured-content-wrapper .btn:before,
+.btn,
+#featured-collection article .popup:hover,
+#featured-collection .cat-links a:hover,
+ #featured-collection .cat-links a:focus,
+.entry-meta.shadow-posted,
+.wp-block-search__button,
+.dark-layout .totop,
+.archive-blog-wrapper article .cat-links a, 
+.blog-posts-wrapper article .cat-links a,
+.cat-links a{
+  background-color: var(--main-color);
+}
+
+.pagination .page-numbers, 
+.pagination .page-numbers {
+  background-color: #eee;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-navigation ul.sub-menu li:hover > a,
+  .main-navigation ul.sub-menu li:focus > a,
+  #top-menu ul.sub-menu li:hover > a,
+  #top-menu ul.sub-menu li:focus > a {
+    background-color: var(--main-color);
+  }
+}
+
+/*----------------------------------------
+  Border Color
+------------------------------------------*/
+
+#respond input[type="submit"]:hover,
+#respond input[type="submit"]:focus,
+.pagination a.page-numbers:hover,
+.pagination a.page-numbers:focus,
+.post-categories li::before,
+.post-categories li::after,
+.wp-block-search__button,
+#featured-collection .cat-links a:hover,
+#featured-collection .cat-links a:focus {
+  border-color: var(--main-color);
+}
+
+.main-navigation ul.sub-menu,
+#top-menu ul.sub-menu,
+.entry-meta.shadow-posted {
+  border-top-color: var(--main-color);
+}
+#message .shadow-entry-header:before{
+  border-right-color: var(--main-color);
+}
+
+
+.main-navigation .current-menu-item a,
+.main-navigation a:focus{
+  color: var(--main-color);
+}
+.site-branding img {
+  max-width: 80%;
+}
+.header-social .social-menu svg {
+  fill: var(--main-color);
+}
+#banner{
+  margin-bottom: 130px;
+}
+.site-branding .site-logo img {
+  max-width: 250px;
+}
+#banner .shadow-section-content .shadow-entry-title{
+  font-size: 40px;
+}
+.banner-social .screen-reader-text{
+  color: var(--main-color);
+}
+#popular{
+  background-color: #fff;
+  padding-top: 40px;
+}
+#popular article .shadow-entry-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+#popular .shadow-entry-title{
+  line-height: 1;
+}
+.home .wrapper.page-section{
+  padding-top: 0;
+}
+.footer-widgets-area .widget.widget_nav_menu ul li a{
+  background-color: transparent;
+  font-size: 24px;
+}
+.footer-widgets-area .widget.widget_nav_menu ul li a:hover,
+.footer-widgets-area .widget.widget_nav_menu ul li a:focus{
+  color: var(--main-color);
+}
+:root {
+  --main-color: var(--main-color);
+}
+#category-list {
+  padding: 20px 0 50px;
+}
+#must-read{
+  background-color: #fff;
+  padding-top: 0px;
+}
+#must-read article .shadow-entry-title {
+    font-size: 22px !important;
+}
+#must-read article .shadow-entry-container{
+  padding: 20px 10px;
+}
+.category-slider .slick-track {
+  padding: 10px 0 50px;
+}
+.category-slider .shadow-entry-header{
+  bottom: -50px;
+  border-radius: 0;
+  background-image: unset;
+  padding: 15px;
+}
+.category-slider .shadow-entry-header .category-count{
+  color: #000;
+  font-size: 16px;
+}
+.category-slider .shadow-entry-header .category-name{
+  color: #000;
+  font-size: 20px;
+}
+.category-slider article:hover .shadow-entry-header .category-name,
+.category-slider .shadow-entry-header .category-name:focus{
+  color: var(--main-color);
+}
+.category-slider article.featured-image{
+  border-radius: 0;
+  overflow: visible;
+}
+/*.blog article:hover,
+.archive article:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}*/
+.blog article:hover .shadow-entry-title a,
+.archive article:hover .shadow-entry-title a{
+  color: var(--main-color) !important;
+}
+.blog .posts-wrapper .shadow-entry-container{
+  padding: 30px 10px;
+}
+.archive #banner-image{
+  padding:  20px 0;
+  background-color: transparent;
+}
+.archive #banner-image .overlay{
+  background-color: transparent;
+}
+.archive ul.trail-items li a,
+.archive ul.trail-items li::after {
+  color: #333;
+}
+#respond textarea{
+  background-color: #e9e9e9;
+}
+#secondary .widget{
+  padding: 10px;
+  margin-bottom: 15px !important;
+
+}
+#colophon{
+  background-color: #333;
+}
+
+#trending {
+  display: none;
+}
+.archive-blog-wrapper .comments-link{
+  color: #fff;
+}
+@media screen and (min-width: 1024px) {
+    .main-navigation ul ul {
+        border-top-color: var(--main-color);
+    }
+    .main-navigation ul.nav-menu > li.menu-item-has-children:hover > a:after {
+        border-bottom-color: var(--main-color);
+    }
+}
+@media screen and (max-width: 1400px) {
+    .category-slider .shadow-entry-header .category-count{
+      font-size: 14px;
+    }
+    .category-slider .shadow-entry-header .category-name{
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .category-slider article.featured-image{
+      padding: 75px 0;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .main-navigation ul.sub-menu,
+    #top-menu ul.sub-menu {
+        border-top-color: var(--main-color);
+    }
+}
+.author .column-4 .addtoany_content, 
+.author .column-5 .addtoany_content, 
+.search .column-4 .addtoany_content, 
+.search .column-5 .addtoany_content, 
+.blog .column-4 .addtoany_content, 
+.archive .column-4 .addtoany_content, 
+.blog .column-5 .addtoany_content, 
+.archive .column-5 .addtoany_content{
+  top: -170px;
+}

@@ -1,0 +1,13 @@
+/*
+* Custom Css for backend 
+*/
+#accordion-section-kavine_blog_trending,
+#accordion-section-kavine_blog_must_read,
+#accordion-section-kavine_blog_author,
+#customize-control-kavine_blog_custom_color_scheme,
+#customize-control-kavine_blog_theme_lite_dark_layout,
+#accordion-section-kavine_blog_header_background_image,
+#customize-control-kavine_blog_blog_archive_column{
+	display: none !important;
+	visibility: hidden;
+}
