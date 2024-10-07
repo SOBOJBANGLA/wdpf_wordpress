@@ -22,17 +22,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsiveslides.css" />
 	
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
-	<![endif]-->
+	
 	
 	<link href='<?php echo get_template_directory_uri(); ?>/images/favicon.ico' rel='icon' type='image/x-icon'/>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
@@ -49,13 +39,32 @@
 		  });
 		});
 	</script>
+	<?php  wp_head() ?>
 </head>
 <body>
 <!--------------Header--------------->
 
 <?php get_header(); ?>
 
-<?php arif_slider_listing($atts ); ?>
+<section id="content ">
+<div class="wrap-content zerogrid ">
+<?php
+
+if(function_exists('news_ticker_setup')){
+ news_ticker_setup(); 
+}
+
+ ?>
+</div>
+</section>
+
+
+<?php
+if(function_exists('arif_slider_listing')){
+ arif_slider_listing( ); 
+};
+ 
+ ?>
 <!--------------Content--------------->
 <section id="content">
 	<div class="wrap-content zerogrid">
@@ -95,5 +104,7 @@
 <!--------------Footer--------------->
 
 <?php get_footer() ?>
+
+<?php  wp_footer() ?>
 </body>
 </html>

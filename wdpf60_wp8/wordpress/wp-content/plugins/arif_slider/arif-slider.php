@@ -29,15 +29,11 @@ add_action( 'init', 'arif_slider_setup' );
 
 add_shortcode( 'arif-slider-list', 'arif_slider_listing' );
 function arif_slider_listing(  ) {
-	ob_start();
-	$args=array(
-      'post_type' => 'slider_post', // Post Type Slug
-      'posts_per_page' =>-1, // Show All
-	  'order'=> 'Desc'
-    );
+	//ob_start();
+	
 
-    return
-    '<div class="featured">
+    
+   echo '<div class="featured">
 	<div class="wrap-featured zerogrid">
 		<div class="slider">
 			<div class="rslides_container">
@@ -53,7 +49,7 @@ function arif_slider_listing(  ) {
 						$query->the_post() ;
 						
 
-			'<li>'; the_post_thumbnail() ; '</li>';
+			echo '<li>'; the_post_thumbnail() ; echo '</li>';
 					
 					endwhile;
 				endif;
@@ -63,7 +59,7 @@ function arif_slider_listing(  ) {
 
 					
 					
-				'</ul>
+			echo	'</ul>
 			</div>
 		</div>
 	</div>
